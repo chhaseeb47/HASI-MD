@@ -30,7 +30,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃.baiscope
 ┃.mfire
 ╰━━━━━━━━━━━━━━━⬣
- 
 
 ╭━━〔  *INFO CMD* 〕━━⬣
 ┃
@@ -47,7 +46,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃.script
 ╰━━━━━━━━━━━━━━━⬣
 
-
 ╭━〔 *OTHER CMD* 〕━━⬣
 ┃
 ┃.joke 
@@ -58,7 +56,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃.srepo 
 ┃.define 
 ╰━━━━━━━━━━━━━━━⬣
-
 
 ╭━〔 *GROUP CMD* 〕━━⬣
 ┃
@@ -94,7 +91,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃.disappear 7d 24h 90d
 ╰━━━━━━━━━━━━━━━⬣
 
-
 ╭━〔 *OWNER CMD* 〕━━⬣
 ┃
 ┃.update
@@ -113,7 +109,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃.gjid 
 ╰━━━━━━━━━━━━━━━⬣
 
-
 ╭━〔 *CONVERT CMD* 〕━━⬣
 ┃
 ┃.sticker
@@ -121,8 +116,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃.trt 
 ╰━━━━━━━━━━━━━━━⬣
 
-
- *📌 𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ*
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(

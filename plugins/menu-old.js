@@ -90,7 +90,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `╭━━〔 *Logo List* 〕━━┈⊷
-┃◈╭─────────────·๏
+┃◈╭─────────·๏
 ┃◈┃• neonlight
 ┃◈┃• blackpink
 ┃◈┃• dragonball
@@ -122,8 +122,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• bear
 ┃◈┃• typography
 ┃◈┃• birthday
-┃◈└───────────┈⊷
-╰──────────────┈⊷`;
+┃◈└─────────┈⊷
+╰────────────┈⊷`;
 
         await conn.sendMessage(
             from,
@@ -160,7 +160,7 @@ cmd({
 async (conn, mek, m, { from, quoted, reply }) => {
     try {
         let dec = `╭━━〔 *Reactions Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
+┃◈╭─────────·๏
 ┃◈┃• bully @tag
 ┃◈┃• cuddle @tag
 ┃◈┃• cry @tag
@@ -187,8 +187,8 @@ async (conn, mek, m, { from, quoted, reply }) => {
 ┃◈┃• poke @tag
 ┃◈┃• dance @tag
 ┃◈┃• cringe @tag
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+┃◈└─────────┈⊷
+╰────────────┈⊷
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
@@ -228,7 +228,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `╭━━〔 *Download Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
+┃◈╭─────────·๏
 ┃◈┃• facebook
 ┃◈┃• mediafire
 ┃◈┃• tiktok
@@ -270,8 +270,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• gdrive
 ┃◈┃• ssweb
 ┃◈┃• tiks
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+┃◈└─────────┈⊷
+╰────────────┈⊷
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
@@ -312,7 +312,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try
        {
         let dec = `╭━━〔 *Group Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
+┃◈╭─────────·๏
 ┃◈┃• grouplink
 ┃◈┃• kickall
 ┃◈┃• kickall2
@@ -348,8 +348,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• hidetag
 ┃◈┃• tagall
 ┃◈┃• tagadmins
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+┃◈└─────────┈⊷
+╰────────────┈⊷
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
@@ -390,7 +390,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
 
         let dec = `╭━━〔 *Fun Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
+┃◈╭─────────·๏
 ┃◈┃• shapar
 ┃◈┃• rate
 ┃◈┃• insult
@@ -415,8 +415,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• nikal
 ┃◈┃• hifi
 ┃◈┃• poke
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+┃◈└─────────┈⊷
+╰────────────┈⊷
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
@@ -456,7 +456,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `╭━━〔 *Other Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
+┃◈╭─────────·๏
 ┃◈┃• timenow
 ┃◈┃• date
 ┃◈┃• count
@@ -486,8 +486,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• githubstalk
 ┃◈┃• yts
 ┃◈┃• ytv
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+┃◈└─────────┈⊷
+╰────────────┈⊷
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
@@ -527,7 +527,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `╭━━〔 *Main Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
+┃◈╭─────────·๏
 ┃◈┃• ping
 ┃◈┃• live 
 ┃◈┃• alive
@@ -538,8 +538,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• menu
 ┃◈┃• menu2
 ┃◈┃• restart
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+┃◈└─────────┈⊷
+╰────────────┈⊷
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
@@ -579,7 +579,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `╭━━〔 *Owner Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
+┃◈╭─────────·๏
 ┃◈┃• owner
 ┃◈┃• menu
 ┃◈┃• menu2
@@ -597,8 +597,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• ping 
 ┃◈┃• gjid
 ┃◈┃• jid
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+┃◈└─────────┈⊷
+╰────────────┈⊷
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
@@ -638,7 +638,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `╭━━〔 *Convert Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
+┃◈╭─────────·๏
 ┃◈┃• sticker
 ┃◈┃• sticker2
 ┃◈┃• emojimix
@@ -658,8 +658,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• repeat 
 ┃◈┃• ask
 ┃◈┃• readmore
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+┃◈└─────────┈⊷
+╰────────────┈⊷
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
@@ -700,7 +700,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
           let dec = `╭━━〔 *Anime Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
+┃◈╭─────────·๏
 ┃◈┃• fack
 ┃◈┃• dog
 ┃◈┃• awoo
@@ -727,8 +727,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• animenews
 ┃◈┃• foxgirl
 ┃◈┃• naruto
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+┃◈└─────────┈⊷
+╰────────────┈⊷
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
@@ -769,7 +769,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `╭━━〔 *Ai Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
+┃◈╭─────────·๏
 ┃◈┃• ai
 ┃◈┃• gpt3
 ┃◈┃• gpt2
@@ -786,8 +786,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• imagine 
 ┃◈┃• imagine2
 ┃◈┃• copilot
-┃◈└───────────┈⊷
-╰──────────────┈⊷
+┃◈└─────────┈⊷
+╰────────────┈⊷
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(

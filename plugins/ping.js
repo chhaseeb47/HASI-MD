@@ -27,9 +27,9 @@ async (conn, mek, m, { from, reply }) => {
 *│🚀 sᴘᴇᴇᴅ:* ${speed}ms
 *│🧠 ᴜᴘᴛɪ.ᴇ:* ${runtime(process.uptime())}
 *│❤️‍🔥 ᴠᴇʀsɪᴏɴ:* v${config.VERSION || "5.0.0"}
-*╰━━━━━━━━━━━━━━━━━━━━⬣*
+*╰━━━━━━━━━━━━━━━⬣*
 
-> 📌 ᴘᴏᴡᴇʀ ʙʏ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ
+> 📌 𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ
 `;
 
         await conn.sendMessage(from, {
@@ -87,9 +87,9 @@ async (conn, mek, m, { from, reply }) => {
 *│🚀 𝐒𝐩𝐞𝐞𝐝:* ${speed}ms
 *│🟢 𝐒𝐭𝐚𝐭𝐮𝐬:* Online
 *│📦 𝐕𝐞𝐫𝐬𝐢𝐨𝐧:* v${config.VERSION || "5.0.0"}
-*╰━━━━━━━━━━━━━━━━━━━━⬣*
+*╰━━━━━━━━━━━━⬣*
 
-> 📌 ᴘᴏᴡᴇʀ ʙʏ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ
+> 📌 𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ
 `;
 
         await conn.sendMessage(from, {

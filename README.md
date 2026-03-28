@@ -31,12 +31,6 @@
 
 </div>
 </p>
-
-<h1 align="center">
-  <img src="https://img.shields.io/badge/-✨_HASI-MD_INSIGHTS_✨-purple?style=for-the-badge&logo=sparkles&logoColor=white&labelColor=0d1117&color=9d4edd&label=&link=https://github.com/HASI-MD&link=https://github.com/HASI-MD" />
-</h1>
-</p>
-</p>
     <img src="https://komarev.com/ghpvc/?username=chhaseeb47&label=Views&color=9D00FF&style=flat" alt="Profile Views" />
     <img src="https://img.shields.io/github/stars/chhaseeb47/HASI-MD?color=9D00FF&label=Stars&style=flat" alt="GitHub Stars" />
     <img src="https://img.shields.io/github/forks/chhaseeb47/HASI-MD?style=flat&color=1E88E5&logo=github&logoColor=white&label=Forks" alt="GitHub Forks" />
@@ -47,8 +41,6 @@
   </p>
   
 </div>
-
-
 
 ---
 
@@ -111,10 +103,6 @@
 
 ## HASI-MD FEATURES
 
-<div align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?color=purple&label=Features&style=for-the-badge&url=https://api.example.com/khanmd&query=$.features_count&suffix=%20Active" alt="Features"/>
-</p>
-</div>
 
 <div align="center">
 

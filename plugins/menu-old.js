@@ -15,16 +15,17 @@ cmd({
 },
 async (conn, mek, m, { from, sender, pushname, reply }) => {
     try {
-        const dec = `╭━━━〔 *${config.BOT_NAME} Main Menu* 〕━━━╮
+        const dec = `╭━〔 *${config.BOT_NAME}* 〕━╮
+┃        
 ┃ ✨ *Owner:* ${config.OWNER_NAME}
 ┃ ⚙️ *Mode:* ${config.MODE}
 ┃ 📡 *Platform:* Heroku
-┃ 🧠 *Type:* NodeJs (Multi Device)
+┃ 🧠 *Type:* NodeJs (MD)
 ┃ ⌨️ *Prefix:* ${config.PREFIX}
-┃ 🧾 *Version:* 3.0.0 Beta
-╰━━━━━━━━━━━━━━━━━━━━━━━━╯
+┃ 🧾 *Version:* 3.0.0
+╰━━━━━━━━━━━━━━━╯
 
-╭━━〔 🧩 *Command Categories* 〕━━╮
+╭━〔 *📜 𝐀ʟʟ 𝐌ᴇɴᴜs* 〕━╮
 ┃ 📖 Quranmenu
 ┃ 🕋 Prayertime
 ┃ 🤖 Aimenu
@@ -41,7 +42,7 @@ async (conn, mek, m, { from, sender, pushname, reply }) => {
 ┃ 🧩 Othermenu
 ┃ 🖌️ Logo
 ┃ 📦 Repo
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━━╯
+╰━━━━━━━━━━━━━━━╯
 > ${config.DESCRIPTION}
 `;
 
@@ -89,7 +90,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Logo List* 〕━━┈⊷
+        let dec = `╭━〔 *🎨 𝐋ᴏɢᴏ 𝐋ɪsᴛ* 〕━┈⊷
 ┃◈╭─────────·๏
 ┃◈┃• neonlight
 ┃◈┃• blackpink
@@ -159,7 +160,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, reply }) => {
     try {
-        let dec = `╭━━〔 *Reactions Menu* 〕━━┈⊷
+        let dec = `╭━〔 *😂 𝐑ᴇᴀᴄᴛɪᴏɴs 𝐌ᴇɴᴜ* 〕━┈⊷
 ┃◈╭─────────·๏
 ┃◈┃• bully @tag
 ┃◈┃• cuddle @tag
@@ -227,7 +228,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Download Menu* 〕━━┈⊷
+        let dec = `╭━〔 *⬇️ 𝐃ᴏᴡɴʟᴏᴀᴅ 𝐌ᴇɴᴜ* 〕━┈⊷
 ┃◈╭─────────·๏
 ┃◈┃• facebook
 ┃◈┃• mediafire
@@ -305,13 +306,13 @@ cmd({
     pattern: "groupmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "⤵️",
+    react: "👥",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try
-       {
-        let dec = `╭━━〔 *Group Menu* 〕━━┈⊷
+    {
+        let dec = `╭━〔 *👥 𝐆ʀᴏᴜᴘ 𝐌ᴇɴᴜ* 〕━┈⊷
 ┃◈╭─────────·๏
 ┃◈┃• grouplink
 ┃◈┃• kickall
@@ -389,7 +390,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
 
-        let dec = `╭━━〔 *Fun Menu* 〕━━┈⊷
+        let dec = `╭━━〔 *🎉 𝐅ᴜɴ 𝐌ᴇɴᴜ* 〕━━┈⊷
 ┃◈╭─────────·๏
 ┃◈┃• shapar
 ┃◈┃• rate
@@ -455,7 +456,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Other Menu* 〕━━┈⊷
+        let dec = `╭━〔 *🧩 𝐎ᴛʜᴇʀ 𝐌ᴇɴᴜ* 〕━┈⊷
 ┃◈╭─────────·๏
 ┃◈┃• timenow
 ┃◈┃• date
@@ -526,7 +527,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Main Menu* 〕━━┈⊷
+        let dec = `╭━〔 *🏠 𝐌ᴀɪɴ 𝐌ᴇɴᴜs* 〕━┈⊷
 ┃◈╭─────────·๏
 ┃◈┃• ping
 ┃◈┃• live 
@@ -578,7 +579,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Owner Menu* 〕━━┈⊷
+        let dec = `╭━〔 *👑 𝐎ᴡɴᴇʀ 𝐌ᴇɴᴜ* 〕━┈⊷
 ┃◈╭─────────·๏
 ┃◈┃• owner
 ┃◈┃• menu
@@ -637,7 +638,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Convert Menu* 〕━━┈⊷
+        let dec = `╭━━〔 *🔄 𝐂ᴏɴᴠᴇʀᴛ 𝐌ᴇɴᴜ* 〕━━┈⊷
 ┃◈╭─────────·๏
 ┃◈┃• sticker
 ┃◈┃• sticker2
@@ -699,7 +700,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-          let dec = `╭━━〔 *Anime Menu* 〕━━┈⊷
+          let dec = `╭━━〔 *🎭 𝐀ɴɪᴍᴇ 𝐌ᴇɴᴜ* 〕━━┈⊷
 ┃◈╭─────────·๏
 ┃◈┃• fack
 ┃◈┃• dog
@@ -768,7 +769,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Ai Menu* 〕━━┈⊷
+        let dec = `╭━━〔 *🤖 𝐀ɪ 𝐌ᴇɴᴜ* 〕━━┈⊷
 ┃◈╭─────────·๏
 ┃◈┃• ai
 ┃◈┃• gpt3

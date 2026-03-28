@@ -8,14 +8,14 @@ cmd({
     alias: ["status", "online", "a"],
     desc: "Check bot is alive or not",
     category: "main",
-    react: "🌈",
+    react: "🧞",
     filename: __filename
 },
 async (conn, mek, m, { from, reply }) => {
     try {
 
         const aliveMsg = `
-*╭━〔 🌐 𝐇ᴀsɪ 𝐌ᴅ 〕━⬣̣*
+*╭━━〔 🧞 𝐇ᴀsɪ 𝐌ᴅ 〕━⬣̣*
 *│★
 *│★ 🤖 sᴛᴀᴛᴜs:* Online 
 *│★ 👑 ᴏᴡɴᴇʀ:* ${config.OWNER_NAME}
@@ -24,7 +24,7 @@ async (conn, mek, m, { from, reply }) => {
 *│★ 💻 ʜᴏsᴛ:* ${os.hostname()}
 *│★ 💾 ʀᴀᴍ:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
 *│★ ⏱️ ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
-*╰━━━━━━━━━━━━━━━━━⬣*
+*╰━━━━━━━━━━━━━━━⬣*
 
 > 𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ
 `;

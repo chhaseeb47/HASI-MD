@@ -64,10 +64,14 @@
  <div align="center">
 
 
-### Fork The Reposrtry
+### Fork The Reposrtry 
+<p align="center">
 <a href='https://github.com/chhaseeb47/HASI-MD/fork' target="_blank">
       <img src='https://img.shields.io/badge/FORK_REPOSITORY-008000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000'/>
     </a>
+    </p>
+    
+    
 ### 🔥 SHORT SESSION ID
 <p align="center">
   <a href="https://mafiamdpair-6b21b2f6849b.herokuapp.com/pair">

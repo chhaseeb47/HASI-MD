@@ -19,6 +19,16 @@
     0 0 48px #ab47bc;
   padding: 12px 0;
 "> Built on Baileys • Designed for Speed • Enhanced for Stability •
+
+***
+
+<div align="center"> 
+  <img src="https://img.shields.io/badge/WhatsApp-MultiDevice-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Multi-Device"/>    
+  <img src="https://img.shields.io/badge/Powered%20By-Node.js-339933?style=for-the-badge&logo=nodedotjs" alt="Node.js"/>    
+  <img src="https://img.shields.io/badge/Baileys-Latest-blueviolet?style=for-the-badge" alt="Baileys"/>  
+</div>
+
+
 </div>
 </p>
 
@@ -39,13 +49,6 @@
 </div>
 
 
-***
-
-<div align="center"> 
-  <img src="https://img.shields.io/badge/WhatsApp-MultiDevice-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Multi-Device"/>    
-  <img src="https://img.shields.io/badge/Powered%20By-Node.js-339933?style=for-the-badge&logo=nodedotjs" alt="Node.js"/>    
-  <img src="https://img.shields.io/badge/Baileys-Latest-blueviolet?style=for-the-badge" alt="Baileys"/>  
-</div>
 
 ---
 

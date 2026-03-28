@@ -38,42 +38,30 @@
 
 <h2 align="center">🛰️ Deployment Steps</h2>
 
-<div align="center">
+<div align="center" style="margin-top:25px;">
 
-<table>
-<tr>
-
-<td align="center">
-<h3>🍴 Fork Repository</h3>
+<h3 style="color:#00ffff;">🍴 Step 1: Fork Repository</h3>
 <a href="https://github.com/chhaseeb47/HASI-MD/fork" target="_blank">
-<img src="https://img.shields.io/badge/FORK_REPOSITORY-008000?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/FORK_REPOSITORY-00ffcc?style=for-the-badge&logo=github&logoColor=black&labelColor=000000"/>
 </a>
-</td>
 
-<td align="center">
-<h3>🔑 Generate Session ID</h3>
+<br><br>
+<h2>⬇️</h2>
+
+<h3 style="color:#ff6bff;">🔑 Step 2: Generate Session ID</h3>
 <a href="https://mafiamdpair-6b21b2f6849b.herokuapp.com/pair" target="_blank">
-<img src="https://img.shields.io/badge/PAIR_SESSION-FF6B6B?style=for-the-badge&logo=codechef&logoColor=white"/>
+<img src="https://img.shields.io/badge/PAIR_SESSION-ff66cc?style=for-the-badge&logo=codechef&logoColor=white&labelColor=1a001a"/>
 </a>
-</td>
 
-<td align="center">
-<h3>🚀 Deploy on Heroku</h3>
+<br><br>
+<h2>⬇️</h2>
+
+<h3 style="color:#66ff66;">🚀 Step 3: Deploy on Heroku</h3>
 <a href="https://dashboard.heroku.com/new?template=https://github.com/chhaseeb47/HASI-MD" target="_blank">
-<img src="https://img.shields.io/badge/DEPLOY_HEROKU-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
+<img src="https://img.shields.io/badge/DEPLOY_HEROKU-66ff66?style=for-the-badge&logo=heroku&logoColor=black&labelColor=001a00"/>
 </a>
-</td>
-
-</tr>
-</table>
 
 </div>
-
----
-
-## 🚀 Pairing Dashboard
-
-> Use buttons above to deploy & connect your bot.
 
 ---
 
@@ -98,7 +86,7 @@
 
 ---
 
-<h2 align="center">📢 SUPPORT CHANNEL</h2>
+<h2 align="left">📢 SUPPORT CHANNEL</h2>
 
 <div align="center">
 
@@ -113,10 +101,7 @@
 ## 📜 DISCLAIMER
 
 <div align="center">
-
-This bot is not affiliated with WhatsApp.  
-Use at your own risk.
-
+This bot is not affiliated with WhatsApp. Use at your own risk.
 </div>
 
 ---
@@ -124,9 +109,7 @@ Use at your own risk.
 ## 📝 LICENSE
 
 <div align="center">
-
 Apache License 2.0
-
 </div>
 
 ---

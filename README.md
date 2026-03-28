@@ -21,11 +21,7 @@
 <br>
 
 <img src="https://img.shields.io/badge/WhatsApp-MultiDevice-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs"/>
-<img src="https://img.shields.io/badge/Baileys-Latest-blueviolet?style=for-the-badge"/>
-
 <br><br>
-
 <img src="https://komarev.com/ghpvc/?username=chhaseeb47&label=Views&color=9D00FF&style=flat"/>
 <img src="https://img.shields.io/github/stars/chhaseeb47/HASI-MD?style=flat&color=9D00FF"/>
 <img src="https://img.shields.io/github/forks/chhaseeb47/HASI-MD?style=flat&color=1E88E5"/>
@@ -54,7 +50,6 @@
 </a>
 
 <br><br>
-<h2>⬇️</h2>
 
 <h3 style="color:#66ff66;">🚀 Step 3: Deploy on Heroku</h3>
 <a href="https://dashboard.heroku.com/new?template=https://github.com/chhaseeb47/HASI-MD" target="_blank">

@@ -12,7 +12,7 @@ cmd({
 async (conn, mek, m, { from, reply, isCreator }) => {
     try {
         if (!isCreator) {
-            return reply("*❤️‍🔥ᴛʜɪs ɪᴀ ᴀɴ ᴏᴡɴᴇʀ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅ☼︎*");
+            return reply("*❤️‍🔥ᴛʜɪs ɪs ᴀɴ ᴏᴡɴᴇʀ ᴄᴏᴍᴍᴀɴᴅ☼︎*");
         }
 
         // Initial message
@@ -22,14 +22,16 @@ async (conn, mek, m, { from, reply, isCreator }) => {
 
         // Update steps with emojis
         const updateSteps = [
-            "*🔍 cнєcкιηg sүsтєм sтαтυs...*",
-            "*🛠️ ρяєραʀιηg υρ∂αтє cσмρσηєηтs...*",
-            "*📦 ғιηαℓιzιηg ραcкαgєs...*",
-            "*⚡ σρтιмιzιηg ρєʀғσʀмαηcε...*",
-            "*🔃 ᗩᗪᗴᗴᒪ ᙭ᗪ ᖇᗴՏTᗩᖇT...*",
-            "*♻️ ʀєѕτατιηg sεʀvιcεs...*"
+            "*🔍 𝗰𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝘀𝘆𝘀𝘁𝗲𝗺 𝘀𝘁𝗮𝘁𝘂𝘀...*",
+            "*🛠️ 𝗽𝗿𝗲𝗽𝗮𝗿𝗶𝗻𝗴 𝘂𝗽𝗱𝗮𝘁𝗲 𝗰𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀....*",
+            "*📦 𝗳𝗶𝗻𝗮𝗹𝗶𝘇𝗶𝗻𝗴 𝗽𝗮𝗰𝗸𝗮𝗴𝗲𝘀....*",
+            "*⚡ 𝗼𝗽𝘁𝗶𝗺𝗶𝘇𝗶𝗻𝗴 𝗽𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲....*",
+            "*🔃 𝗛𝗔𝗦𝗜-𝗠𝗗 𝗥𝗘𝗦𝗧𝗔𝗥𝗧...*",
+            "*♻️ 𝗿𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀...*"
         ];
+,
 
+    
         // Show each step with delay
         for (const step of updateSteps) {
             await sleep(1500);
@@ -50,7 +52,7 @@ async (conn, mek, m, { from, reply, isCreator }) => {
 
         // Final message before restart
         await conn.sendMessage(from, {
-            text: '- *ᴀᴅᴇᴇʟ xᴍᴅ υρ∂αтє cσмρℓєтє∂ ʀєѕτατιηg*'
+            text: '- *𝗛𝗔𝗦𝗜 𝗠𝗗  𝘂𝗽𝗱𝗮𝘁𝗲 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗲𝗱 𝗿𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴*'
         }, { quoted: mek });
 
         // Execute restart after a short delay

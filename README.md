@@ -40,17 +40,12 @@
 <a href="https://github.com/chhaseeb47/HASI-MD/fork" target="_blank">
 <img src="https://img.shields.io/badge/FORK_REPOSITORY-00ffcc?style=for-the-badge&logo=github&logoColor=black&labelColor=000000"/>
 </a>
-
 <br><br>
-<h2>⬇️</h2>
-
 <h3 style="color:#ff6bff;">🔑 Step 2: Generate Session ID</h3>
 <a href="https://mafiamdpair-6b21b2f6849b.herokuapp.com/pair" target="_blank">
 <img src="https://img.shields.io/badge/PAIR_SESSION-ff66cc?style=for-the-badge&logo=codechef&logoColor=white&labelColor=1a001a"/>
 </a>
-
 <br><br>
-
 <h3 style="color:#66ff66;">🚀 Step 3: Deploy on Heroku</h3>
 <a href="https://dashboard.heroku.com/new?template=https://github.com/chhaseeb47/HASI-MD" target="_blank">
 <img src="https://img.shields.io/badge/DEPLOY_HEROKU-66ff66?style=for-the-badge&logo=heroku&logoColor=black&labelColor=001a00"/>

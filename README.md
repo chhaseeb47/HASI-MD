@@ -38,10 +38,6 @@
   
 </div>
 
----
-
-> **Deploy New Version `10.0.0`**  
-
 
 ***
 

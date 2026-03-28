@@ -1,33 +1,3 @@
-
-
-<h1 align="center"> ᘜᗴT ᑭᗩIᖇ </h1>
-
-<p align="center">
-  <a href="https://mafiamdpair-6b21b2f6849b.herokuapp.com">
-    <img src="./Adeel/get-session-btn.svg" alt="GET SESSION" width="260"/>
-  </a>
-</p>
-
-<h1 align="center"> ᗪᗴᑭᒪOY </h1>
-
-<p align="center">
-  <a href="https://dashboard.heroku.com/new?template=https://github.com/chhaseeb47/HASI-MD/tree/main">
-    <img src="./Adeel/deploy-btn.svg" alt="DEPLOY ON HEROKU" width="260"/>
-  </a>
-</p>
-
-
-alt="Contact Developer"/>
-  </a>
-</p>
-
-<p align='center'>
-    </p>
-<img src="https://i.imgur.com/dBaSKWF.gif" height="100" width="100%">
-
-___
-
-
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:6a0dad,100:ab47bc&text=HASI%20MD&fontColor=ffffff&fontSize=85&fontAlignY=40&animation=twinkling&desc=Powered%20By%20X%20HASI&descSize=20&descAlignY=65&stroke=ffffff&strokeWidth=1.2" width="100%"/>
@@ -53,7 +23,7 @@ ___
 </p>
 
 <h1 align="center">
-  <img src="https://img.shields.io/badge/-✨_KHAN--MD_INSIGHTS_✨-purple?style=for-the-badge&logo=sparkles&logoColor=white&labelColor=0d1117&color=9d4edd&label=&link=https://github.com/HASI-MD&link=https://github.com/HASI-MD" />
+  <img src="https://img.shields.io/badge/-✨_HASI-MD_INSIGHTS_✨-purple?style=for-the-badge&logo=sparkles&logoColor=white&labelColor=0d1117&color=9d4edd&label=&link=https://github.com/HASI-MD&link=https://github.com/HASI-MD" />
 </h1>
 </p>
 </p>
@@ -72,11 +42,6 @@ ___
 
 > **Deploy New Version `10.0.0`**  
 
----
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/JawadTechXD/JawadTechXD/refs/heads/main/khanmd.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #00ffff;"/>
-</div>
 
 ***
 
@@ -125,85 +90,25 @@ ___
 
 ### 🔥 SHORT SESSION ID
 <p align="center">
-  <a href="https://khanmd-xpair.onrender.com/">
+  <a href="https://mafiamdpair-6b21b2f6849b.herokuapp.com/pair">
     <img src="https://img.shields.io/badge/🚀_PAIR_GENRATER_1-FF6B6B?style=for-the-badge&logo=codechef&logoColor=white&labelColor=1e1b4b" alt="Short Session"/>
   </a>
 </p>
 
-### 🌊 LONG SESSION ID
-<p align="center">
-  <a href="https://khanmd-pair.onrender.com/">
-    <img src="https://img.shields.io/badge/💫_PAIR_GENRATER_2-4F46E5?style=for-the-badge&logo=codeberg&logoColor=white&labelColor=1e1b4b" alt="Long Session"/>
-  </a>
-</p>
-
-</div>
-
----
-
-## 📡 DEPLOYMENT SITES
-
-<p align="center">Deploy your <strong>HASI-MD Bot</strong> with one click on your favorite hosting platforms.</p>
+### 🌊 Deploy On Heroku 
 
 <div align="center">
   <table>
     <tr>
       <!-- Heroku (with rocket logo on left) -->
-      <td><a href="https://dashboard.heroku.com/new?template=https://github.com/JawadTechXD/KHAN-X" target="_blank">
+      <td><a href="https://dashboard.heroku.com/new?template=https://github.com/chhaseeb47/HASI-MD" target="_blank">
   <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=rocket&logoColor=white"/>
 </a></td>
-      <!-- Replit -->
-      <td><a href="https://replit.com/github/JawadTechXD/KHAN-X" target="_blank"><img src="https://img.shields.io/badge/Replit-F26207?style=for-the-badge&logo=replit&logoColor=white&labelColor=000000"/></a></td>
-    </tr>
-    <tr>
-      <!-- Koyeb -->
-      <td><a href="https://app.koyeb.com/deploy?type=git&repository=github.com/JawadTechXD/KHAN-X" target="_blank"><img src="https://img.shields.io/badge/Koyeb-FF009D?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=000000"/></a></td>
-      <!-- Railway -->
-      <td><a href="https://railway.app/new/template?template=https://github.com/JawadTechXD/KHAN-X" target="_blank"><img src="https://img.shields.io/badge/Railway-FF8700?style=for-the-badge&logo=railway&logoColor=white&labelColor=000000"/></a></td>
-    </tr>
-    <tr>
-      <!-- Render (blue color theme) -->
-      <td><a href="https://render.com/deploy?repo=https://github.com/JawadTechXD/KHAN-X" target="_blank"><img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white&labelColor=000000&color=007FFF"/></a></td>
-      <!-- Netlify -->
-      <td><a href="https://app.netlify.com/start/deploy?repository=https://github.com/JawadTechXD/KHAN-X" target="_blank"><img src="https://img.shields.io/badge/Netlify-CC00FF?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=000000"/></a></td>
-    </tr>
-  </table>
+---
 </div>
 
-## 🚀 Deploy Free on VPS
-
-> Star this repository to support the project. Fork the repository to your own GitHub account Copy your GitHub > username and paste it on the VPS site. Get your Session ID from the Pair site and add it to the VPS setup. Click on Deploy and wait about 5 minutes for the bot to start automatically.
-
-> ⚠️ Note: After deployment, use the .restart command to improve the bot's performance.
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <a href="https://jawadtechx.vercel.app" target="_blank">
-        <img alt="VPS Deploy" src="https://img.shields.io/badge/VPS_DEPLOY-Free_Unlimited-8A2BE2?style=for-the-badge&logo=serverless&logoColor=white&labelColor=0F0529"/>
-      </a>
-    </td>
-  </tr>
-  <tr>
-<td align="center">
-      <a href="https://github.com/JawadTechXD/KHAN-X" target="_blank">
-        <img alt="GitHub Codes" src="https://img.shields.io/badge/GITHUB_WORKFLOW-Codes-9B30FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0F0529"/>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/JawadTechXD/KHAN-X/archive/refs/heads/main.zip" target="_blank">
-        <img alt="Download ZIP" src="https://img.shields.io/badge/DOWNLOAD_ZIP-For_Panel-AB82FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0F0529"/>
-      </a>
-    </td>
-  </tr>
-</table>
-
-<hr>
-<p align="center"><i>✨ Keep your bot updated regularly to enjoy the latest features and patches.</i></p>
-
 ---
+
 
 ## HASI-MD FEATURES
 
@@ -239,7 +144,7 @@ ___
 📢 Get updates, fixes, and sneak peeks directly from the official channel.
 </p>
 
-<a href="https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j" target="_blank">
+<a href="https://whatsapp.com/channel/0029VbBgtzUFCCoaZVCQ5d1V" target="_blank">
   <img src="https://img.shields.io/badge/JOIN_CHANNEL-NOW-8A2BE2?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=111111" alt="Join WhatsApp Channel"/>
 </a>
 

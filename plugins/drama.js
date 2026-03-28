@@ -7,21 +7,45 @@ const AXIOS = axios.create({
     headers: { 'User-Agent': 'Mozilla/5.0' }
 })
 
+// 🔹 Fetch video function with new API + old API fallback
 async function fetchVideo(url) {
-    const api = `https://arslan-apis.vercel.app/download/ytmp4?url=${encodeURIComponent(url)}`
-    const res = await AXIOS.get(api)
+    try {
+        // New API
+        const newApi = `https://api.nexoracle.com/downloader/yt-video2?apikey=e9183ccf459da37e5f&url=${encodeURIComponent(url)}`
+        const newRes = await AXIOS.get(newApi)
 
-    if (res.data?.status && res.data?.result?.status && res.data?.result?.download?.url) {
-        return {
-            url: res.data.result.download.url,
-            title: res.data.result.metadata.title,
-            thumb: res.data.result.metadata.thumbnail,
-            quality: res.data.result.download.quality || "720p"
+        if (newRes.data?.status && newRes.data?.result?.download) {
+            return {
+                url: newRes.data.result.download,
+                title: newRes.data.result.title || "Unknown Title",
+                thumb: newRes.data.result.thumbnail || "",
+                quality: newRes.data.result.quality || "HD"
+            }
         }
+
+        throw new Error("New API failed")
+
+    } catch (e) {
+        console.log("New API failed, using old API:", e.message)
+
+        // Old API fallback
+        const oldApi = `https://arslan-apis.vercel.app/download/ytmp4?url=${encodeURIComponent(url)}`
+        const oldRes = await AXIOS.get(oldApi)
+
+        if (oldRes.data?.status && oldRes.data?.result?.status && oldRes.data?.result?.download?.url) {
+            return {
+                url: oldRes.data.result.download.url,
+                title: oldRes.data.result.metadata.title,
+                thumb: oldRes.data.result.metadata.thumbnail,
+                quality: oldRes.data.result.download.quality || "720p"
+            }
+        }
+
+        throw new Error("Both APIs failed")
     }
-    throw new Error("API failed")
 }
 
+// 🔹 Drama Command
 cmd({
     pattern: "drama",
     react: "⛓️",
@@ -103,7 +127,6 @@ cmd({
             }
 
         await conn.sendMessage(from, messageData, { quoted: mek })
-
         await conn.sendMessage(from, { react: { text: "✅", key: m.key } })
 
     } catch (e) {
@@ -111,7 +134,7 @@ cmd({
         console.log(e)
 
         reply(`
-*╭━〔 🌐 𝐇ᴀsɪ 𝐌ᴅ 〕━⬣
+*╭━〔 🌐 𝐇ᴀsɪ 𝐌ᴅ 〕━⬣*
 *│❌ ᴅᴏᴡɴʟᴏᴀᴅ ғᴀɪʟᴇᴅ*
 *│❤️‍🔥 ʀᴇᴀsᴏɴ:* API Error
 *╰━━━━━━━━━━━━━━━━━━━━⬣*

@@ -17,7 +17,7 @@ async (conn, mek, m, { from, reply, isCreator }) => {
 
         // Initial message
         const updateMsg = await conn.sendMessage(from, {
-            text: 'ιηιтιαтιηg sүsтεм υρ∂αтε...🚀'
+            text: '𝗶𝗻𝗶𝘁𝗶𝗮𝘁𝗶𝗻𝗴 𝘀𝘆𝘀𝘁𝗲𝗺 𝘂𝗽𝗱𝗮𝘁𝗲...🚀'
         }, { quoted: mek });
 
         // Update steps with emojis
@@ -29,9 +29,7 @@ async (conn, mek, m, { from, reply, isCreator }) => {
             "*🔃 𝗛𝗔𝗦𝗜-𝗠𝗗 𝗥𝗘𝗦𝗧𝗔𝗥𝗧...*",
             "*♻️ 𝗿𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀...*"
         ];
-,
 
-    
         // Show each step with delay
         for (const step of updateSteps) {
             await sleep(1500);

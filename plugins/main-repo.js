@@ -30,28 +30,25 @@ cmd({
         const repoData = await response.json();
 
         const caption = `
-*╔═══〔 🧠 HASI AI • VIP CORE 🧠 〕═══╗*
-*║ 🔐 SYSTEM : REPOSITORY SCANNER*
-*╚══════════════════════════════════╝*
+❛ ━━━━･🍁❪ 𝐇𝐀𝐒𝐈 𝐌𝐃 𝐆𝐈𝐓 ❫🍁･━━━━ ❜
 
-🟢 🤖 BOT        : ${repoData.name}
-🟢 👑 OWNER      : ${repoData.owner.login}
-🟢 ⭐ STARS      : ${repoData.stargazers_count}
-🟢 🍴 FORKS      : ${repoData.forks_count}
-🟢 📝 DESC       : ${repoData.description || "No description"}
+🍁 𝐁𝐨𝐭   : ${repoData.name}
+👑 𝐎𝐰𝐧𝐞𝐫 : ${repoData.owner.login}
+⭐ 𝐒𝐭𝐚𝐫𝐬  : ${repoData.stargazers_count}
+🍴 𝐅𝐨𝐫𝐤𝐬  : ${repoData.forks_count}
 
-⚡ GITHUB ACCESS :
+🔗 𝐆𝐢𝐭𝐡𝐮𝐛 𝐔𝐫𝐥 :
 ${repoData.html_url}
 
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-👑 VIP STATUS : ACTIVE
-⚡ SECURITY   : ENABLED
-🧠 AI CORE    : ONLINE
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+╭━━━〔 📞 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 〕━━━╮
+👨🏻‍💻𝐃𝐞𝐯 : https://wa.link/j8sksj
+╰━━━━━━━━━━━━━━━━━╯
 
-⭐ STAR & FORK REQUIRED ⭐
+╭━〔 📢 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 〕━╮
+https://whatsapp.com/channel/0029VbBgtzUFCCoaZVCQ5d1V
+╰━━━━━━━━━━━━━━━━━━━╯
 
->  𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ
+> 📌 𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ
 `;
 
         await conn.sendMessage(from, {
@@ -82,10 +79,13 @@ ${repoData.html_url}
     } catch (err) {
         console.error("REPO ERROR:", err);
         reply(`
-*╭━〔 🌐 𝐇ᴀsɪ 𝐌ᴅ 〕━⬣*
-*│❌ 𝐑𝐞𝐩𝐨 𝐅𝐞𝐭𝐜𝐡 𝐅𝐚𝐢𝐥𝐞𝐝*
-*│⏳ Try again later*
-*╰━━━━━━━━━━━━━━━━━━━━⬣*
+╔═══════════╗
+║🍁 𝐇𝐀𝐒𝐈 𝐌𝐃 𝐆𝐈𝐓 🍁║
+╠═══════════╣
+║ ❎ 𝐑𝐞𝐩𝐨 𝐅𝐞𝐭𝐜𝐡 𝐅𝐚𝐢𝐥𝐞𝐝 
+║ ⏳ 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 𝐋𝐚𝐭𝐞r   
+╚═══════════╝
+
 `);
     }
 });

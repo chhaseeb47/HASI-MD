@@ -1,4 +1,4 @@
-const { cmd } = require('../command');
+éconst { cmd } = require('../command');
 const os = require("os");
 const { runtime } = require('../lib/functions');
 const config = require('../config');
@@ -15,17 +15,15 @@ async (conn, mek, m, { from, reply }) => {
     try {
 
         const aliveMsg = `
-*╭━━〔 🧞 𝐇ᴀsɪ 𝐌ᴅ 〕━⬣̣*
-*│★
-*│★ 🤖 sᴛᴀᴛᴜs:* Online 
-*│★ 👑 ᴏᴡɴᴇʀ:* ${config.OWNER_NAME}
-*│★ ⚙️ ᴍᴏᴅᴇ:* ${config.MODE}
-*│★ 🔣 ᴘʀᴇғɪx:* ${config.PREFIX}
-*│★ 💻 ʜᴏsᴛ:* ${os.hostname()}
-*│★ 💾 ʀᴀᴍ:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
-*│★ ⏱️ ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
-*╰━━━━━━━━━━━━━━━⬣*
+•───✦❪ 𝐇𝐀𝐒𝐈 𝐌𝐃 𝐒𝐓𝐀𝐓𝐔𝐒 ❫ ✦───•
 
+👋 @${m.sender.split('@')[0]} *𝐀𝐦 𝐀𝐥𝐢𝐯𝐞*
+
+*اندھیروں میں بھی اپنی روشنی ساتھ رکھتا ہوں 🌙*  
+*میں وہ نہیں جو حالات سے ہار جائے 😎*
+
+📦 𝐑𝐚𝐦    : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
+⏱️ 𝐔𝐩𝐓𝐢𝐦𝐞  :  ${runtime(process.uptime())}
 > 𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ
 `;
 

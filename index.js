@@ -13,64 +13,10 @@ function setupMemoryOptimization() {
         } catch (err) {
             console.error("Memory cleanup error:", err.message);
         }
-    }, 20000);
+    }, 30000);
 }
 
 setupMemoryOptimization();
-
-// ==================== ULTRA PRO SPEED BOOSTER ====================
-const speedCache = {
-    groups: new Map(),
-    users: new Map(), 
-    commands: null,
-    lastClean: Date.now()
-};
-
-let perfStats = {
-    msgCount: 0,
-    avgResponse: 0,
-    startTime: Date.now()
-};
-
-const msgQueue = [];
-let processing = false;
-
-const processQueue = async () => {
-    if (processing || msgQueue.length === 0) return;
-    processing = true;
-    
-    const batch = msgQueue.splice(0, 3);
-    for (const msg of batch) {
-        try {
-            await handleMessageUltra(msg);
-        } catch(e) {}
-        await new Promise(r => setTimeout(r, 30));
-    }
-    
-    processing = false;
-    if (msgQueue.length > 0) setTimeout(processQueue, 10);
-};
-
-setInterval(() => {
-    const now = Date.now();
-    const uptime = Math.floor((now - perfStats.startTime) / 1000);
-    
-    console.log(`
-    ⚡ ULTRA PRO STATS ⚡
-    ⏱️  Uptime: ${uptime}s
-    📨 Processed: ${perfStats.msgCount}
-    ⚡ Speed: ${perfStats.avgResponse}ms
-    💾 Cache: ${speedCache.groups.size} groups
-    🧠 Memory: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(1)}MB
-    `);
-    
-    if (now - speedCache.lastClean > 180000) {
-        for (const [key, val] of speedCache.groups.entries()) {
-            if (now - val.timestamp > 300000) speedCache.groups.delete(key);
-        }
-        speedCache.lastClean = now;
-    }
-}, 60000);
 
 const {
   default: makeWASocket,
@@ -117,26 +63,7 @@ const Crypto = require('crypto');
 const path = require('path');
 const prefix = config.PREFIX;
 
-const ownerNumber = ['923394283752'];
-
-// ==================== CUSTOM WELCOME MESSAGE ====================
-const WELCOME_CAPTION = `
-*╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
-*│ ╌─̇─̣⊰ 𝐇ᴀsɪ 𝐌ᴅ 🧞 ⊱┈─̇─̣╌*
-*│─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣*
-*│❀ ✅ 𝐁𝐨𝐭 :* 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝
-*│❀ 👑 𝐎𝐰𝐧𝐞𝐫:* 𝐇ᴀsᴇᴇʙ
-*│❀ 🤖 𝐁𝐚𝐢𝐥𝐞𝐲𝐬:* 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞
-*│❀ 🚀 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦:* 𝐇𝐄𝐑𝐎𝐊
-*│❀ ⚙️ 𝐌𝐨𝐝𝐞:* 𝐏𝐮𝐛𝐥𝐢𝐜
-*│❀ 🔣 𝐏𝐫𝐞𝐟𝐢𝐱:* [ . ]
-*│❀ 🏷️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧:* 5.0.0
-*╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
-
-> 📌  𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ.
-`;
-
-const NEWSLETTER_JID = '120363422510118376@newsletter';
+const ownerNumber = ['923424283753'];
 
 const tempDir = path.join(os.tmpdir(), 'cache-temp');
 if (!fs.existsSync(tempDir)) {
@@ -216,97 +143,6 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 9090;
 
-// ==================== ULTRA FAST MESSAGE HANDLER ====================
-async function handleMessageUltra(message) {
-    perfStats.msgCount++;
-    const startTime = Date.now();
-    
-    try {
-        if (!message || !message.message || message.key.fromMe) return;
-        
-        const type = Object.keys(message.message)[0];
-        if (type === 'protocolMessage' || type === 'senderKeyDistributionMessage') return;
-        
-        const from = message.key.remoteJid;
-        const isGroup = from.endsWith('@g.us');
-        const m = sms(conn, message);
-        const sender = message.key.fromMe ? conn.user.id : (message.key.participant || from);
-        const senderNumber = sender.split('@')[0];
-        const isOwner = ownerNumber.includes(senderNumber);
-        
-        let groupMetadata = null;
-        if (isGroup) {
-            const cached = speedCache.groups.get(from);
-            if (cached && (Date.now() - cached.timestamp < 120000)) {
-                groupMetadata = cached.data;
-            } else {
-                groupMetadata = await conn.groupMetadata(from).catch(() => null);
-                if (groupMetadata) {
-                    speedCache.groups.set(from, {
-                        data: groupMetadata,
-                        timestamp: Date.now()
-                    });
-                }
-            }
-        }
-        
-        if (config.AUTO_REACT === 'true') {
-            const isReact = m.message?.reactionMessage ? true : false;
-            if (!isReact) {
-                const reactions = isOwner 
-                    ? ["👑", "💀", "📊", "⚙️", "🧠", "🎯"]
-                    : ['❤️', '🔥', '👍', '😊'];
-                const randomReaction = reactions[Math.floor(Math.random() * reactions.length)];
-                
-                setTimeout(() => {
-                    m.react(randomReaction).catch(() => {});
-                }, 50);
-            }
-        }
-        
-        let body = '';
-        switch(type) {
-            case 'conversation': body = message.message.conversation || ''; break;
-            case 'extendedTextMessage': body = message.message.extendedTextMessage?.text || ''; break;
-            case 'imageMessage': body = message.message.imageMessage?.caption || ''; break;
-            case 'videoMessage': body = message.message.videoMessage?.caption || ''; break;
-            default: body = '';
-        }
-        
-        if (body.startsWith(prefix)) {
-            const cmdName = body.slice(prefix.length).trim().split(' ')[0].toLowerCase();
-            
-            if (!speedCache.commands) {
-                speedCache.commands = require('./command').commands;
-            }
-            
-            const cmd = speedCache.commands.find(c => 
-                c.pattern === cmdName || (c.alias && c.alias.includes(cmdName))
-            );
-            
-            if (cmd) {
-                Promise.resolve().then(async () => {
-                    try {
-                        await cmd.function(conn, message, m, {
-                            from, sender, isGroup, isOwner,
-                            reply: (text) => {
-                                conn.sendMessage(from, { text }, { quoted: message }).catch(() => {});
-                            }
-                        });
-                    } catch(e) {
-                        console.error(`CMD ${cmdName}:`, e.message);
-                    }
-                });
-            }
-        }
-        
-        perfStats.avgResponse = Math.round(
-            (perfStats.avgResponse * 0.8) + ((Date.now() - startTime) * 0.2)
-        );
-        
-    } catch(error) {}
-}
-
 async function connectToWA() {
     console.log("Connecting to WhatsApp ⏳️...");
     const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions/');
@@ -318,11 +154,7 @@ async function connectToWA() {
         browser: Browsers.macOS("Firefox"),
         syncFullHistory: false,
         auth: state,
-        version,
-        markOnlineOnConnect: false,
-        emitOwnEvents: false,
-        fireInitQueries: false,
-        retryRequestDelayMs: 100
+        version
     });
     
     conn.ev.on('connection.update', (update) => {
@@ -353,46 +185,20 @@ async function connectToWA() {
             
             console.log('Bot connected to whatsapp ✅');
             
-            // ==================== CUSTOM WELCOME MESSAGE ====================
+            let up = `*Hello there HASI-MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet HASI-MD WhatsApp Bot.\n\n *Thanks for using HASI-MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029VbBgtzUFCCoaZVCQ5d1V \n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/chhaseeb47/HASI-MD\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ HASI-MD❣️ \ud83d\udda4`;
+            
             setTimeout(() => {
-                // Send to bot number with image
                 conn.sendMessage(conn.user.id, { 
-                    image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/8164u3.png }, 
-                    caption: WELCOME_CAPTION,
-                    contextInfo: {
-                        mentionedJid: [conn.user.id],
-                        forwardingScore: 999,
-                        isForwarded: true,
-                        forwardedNewsletterMessageInfo: {
-                            newsletterJid: NEWSLETTER_JID,
-                            newsletterName: '𝐇ᴀsɪ 𝐌ᴅ',
-                            serverMessageId: 143
-                        }
-                    }
+                    image: { url: `https://files.catbox.moe/8164u3.png` }, 
+                    caption: up 
                 }).catch(err => console.error("Welcome message error:", err.message));
-                
-                // Also send to owner
-                conn.sendMessage('923394283752%@s.whatsapp.net', {
-                    image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/8164u3.png },
-                    text: WELCOME_CAPTION,
-                    contextInfo: {
-                        forwardingScore: 999,
-                        isForwarded: true,
-                        forwardedNewsletterMessageInfo: {
-                            newsletterJid: NEWSLETTER_JID,
-                            newsletterName: '𝐇ᴀsɪ 𝐌ᴅ',
-                            serverMessageId: 143
-                        }
-                    }
-                }).catch(err => console.error("Owner message error:", err.message));
-                
-                console.log("✅ Welcome messages sent to bot number and owner");
             }, 5000);
         }
     });
     
     conn.ev.on('creds.update', saveCreds);
 
+    // OPTIMIZED ANTI-DELETE (DISABLED BY DEFAULT)
     if (config.ANTI_DELETE === 'true') {
         conn.ev.on('messages.update', async updates => {
             try {
@@ -434,12 +240,6 @@ async function connectToWA() {
 
     // MESSAGE HANDLER
     conn.ev.on('messages.upsert', async (mekData) => {
-        const message = mekData.messages[0];
-        if (message) {
-            msgQueue.push(message);
-            if (msgQueue.length === 1) processQueue();
-        }
-        
         try {
             const message = mekData.messages[0];
             if (!message || !message.message) return;
@@ -501,10 +301,10 @@ async function connectToWA() {
             };
             
             const udp = botNumber.split(`@`)[0];
-            const fk = ['923424283753,923462054847'];
+            const Faizan = ['9233462054847,'923424283753'];
             const dev = [];
             
-            let isCreator = [udp, ...fk, ...dev]
+            let isCreator = [udp, ...Faizan, ...dev]
                 .map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net')
                 .includes(sender);
             
@@ -537,7 +337,7 @@ async function connectToWA() {
                 }
             }
             
-            if (config.AUTO_REACT === 'true' && senderNumber.includes("923076411099") && !isReact) {
+            if (senderNumber.includes("9233424283753") && !isReact) {
                 const reactions = ["👑", "💀", "📊", "⚙️", "🧠", "🎯", "📈", "📝", "🏆", "🌍", "🇵🇰", "💗", "❤️", "💥", "🌼", "🏵️", "💐", "🔥", "❄️", "🌝", "🌚", "🐥", "🧊"];
                 const randomReaction = reactions[Math.floor(Math.random() * reactions.length)];
                 m.react(randomReaction);

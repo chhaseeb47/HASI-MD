@@ -25,8 +25,8 @@ async (conn, mek, m, { from, reply }) => {
 *╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
 *│ ╌─̇─̣⊰ 𝐇ᴀsɪ 𝐌ᴅ ⊱┈─̇─̣╌*
 *│─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣*
-*│❀ 🤖 𝐒𝐭𝐚𝐭𝐮𝐬:* Online ✅
-*│❀ 💻 𝐇𝐨𝐬𝐭:* ${os.hostname()}
+*│❀ 🤖 𝐒𝐭𝐚𝐭𝐮𝐬:* Online
+*│❀ 💻 𝐇𝐨𝐬𝐭:* Heroku
 *│❀ 💾 𝐑𝐀𝐌:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
 *│❀ ⏱️ 𝐔𝐩𝐭𝐢𝐦𝐞:* ${runtime(process.uptime())}
 *╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*

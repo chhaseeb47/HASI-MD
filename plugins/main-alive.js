@@ -22,9 +22,16 @@ async (conn, mek, m, { from, reply }) => {
 *اندھیروں میں بھی اپنی روشنی ساتھ رکھتا ہوں 🌙*  
 *میں وہ نہیں جو حالات سے ہار جائے 😎*
 
-📦 𝐑𝐚𝐦    : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
-⏱️ 𝐔𝐩𝐓𝐢𝐦𝐞  :  ${runtime(process.uptime())}
-> 𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ
+*╭ׂ┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
+*│ ╌─̇─̣⊰ 𝐇ᴀsɪ 𝐌ᴅ ⊱┈─̇─̣╌*
+*│─̇─̣┄┄┄┄┄┄┄┄┄┄┄┄┄─̇─̣*
+*│❀ 🤖 𝐒𝐭𝐚𝐭𝐮𝐬:* Online ✅
+*│❀ 💻 𝐇𝐨𝐬𝐭:* ${os.hostname()}
+*│❀ 💾 𝐑𝐀𝐌:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
+*│❀ ⏱️ 𝐔𝐩𝐭𝐢𝐦𝐞:* ${runtime(process.uptime())}
+*╰┄─̣┄─̇─̣┄─̇─̣┄─̇─̣┄─̇─̣─̇─̣─᛭*
+
+> 📌 𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ
 `;
 
         await conn.sendMessage(from, {
@@ -51,7 +58,7 @@ async (conn, mek, m, { from, reply }) => {
 *│⏳ Please try again later*
 *╰━━━━━━━━━━━━━━━━━━━━⬣*
 
-> 𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ
+> 📌 𝐏ᴏᴡᴇʀᴅ 𝐁ʏ 𝐇ᴀsɪ 𝐌ᴅ
 `;
 
         await reply(errorMsg);

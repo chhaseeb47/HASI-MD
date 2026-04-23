@@ -91,7 +91,7 @@ setInterval(clearTempDir, 5 * 60 * 1000);
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
     if (config.SESSION_ID && config.SESSION_ID.trim() !== "") {
-        const sessdata = config.SESSION_ID.replace("HASI-MD~", '');
+        const sessdata = config.SESSION_ID.replace("ADEEL-XMD~", '');
         try {
             const decodedData = Buffer.from(sessdata, 'base64').toString('utf-8');
             fs.writeFileSync(__dirname + '/sessions/creds.json', decodedData);
